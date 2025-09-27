@@ -590,27 +590,43 @@ footer {
     transition: 0.3s;
 }
 
-#contact h2{
-    font-size: 28px;
-    color: #02dbf8;
-    font-weight: bold;
-    border-bottom: 2px solid #7e878f;
-    margin-bottom: 20px;
+#contact {
+  padding: 5rem 0;
+  color: white;
 }
-.contact{
-    margin-bottom: 20px;
-    font-weight: normal;
+
+#contact .section-title h2{
+  color: #02dbf8;
+  margin-left: 50%;
 }
-.contact p{
-    margin: 5px 0;
-    color: #f8f4f4;
-    list-style: none;
-    font-weight: normal;
+
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
 }
-#contact p a{
-    color: #02dbf8;
+
+.form-group {
+  margin-bottom: 1.5rem;
 }
- .contact-card {
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+.contact-card {
   flex: 0 0 300px;
   background: #022128;
   border: 2px solid var(--primary-color, #000000);
@@ -624,7 +640,7 @@ footer {
 
 .contact-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 25px  rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 }
 .contact-slider {
   display: flex;
@@ -638,25 +654,6 @@ footer {
 .contact-slider::-webkit-scrollbar {
   display: none; 
 }
-.shine {
-  display: inline-block;
-  text-decoration: underline;
-  background: linear-gradient(90deg, #02dbf8, #f0eff0, #0ac5f4);
-  background-size: 200% auto;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: shine 3s linear infinite;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.shine:hover {
-  transform: scale(1.05);
-  text-shadow: 0 0 10px rgba(234, 239, 239, 0.6),0 0 20px rgba(13, 227, 227, 0.6);
-
-} 
-
 footer a{
   color: #fff9f9;
   text-decoration: none;
@@ -694,4 +691,5 @@ footer a{
   display: none; 
 }
  
+
  
