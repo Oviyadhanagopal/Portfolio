@@ -9,9 +9,15 @@
 </head>
 <body>
 
-   <header>
+    <header>
     <div class="name">OVIYA</div>
-    <nav class="navbar">
+    <nav>
+<button class="navbar-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+  </button>
+  <div class="navbar-item">
       <ul>
         <li><a href="#aboutme" >About Me</a></li>
         <li><a href="#education" >Education</a></li>
@@ -21,8 +27,22 @@
         <li><a href="#contact" >Contact</a></li>
       </ul>
     </nav>
-  </header> 
-  
+  </div>
+  </header>  
+<script>
+    const navbarBtn = document.querySelector('.navbar-btn');
+    const navbarItem = document.querySelector('.navbar-item');
+
+    navbarBtn.addEventListener('click', () => {
+      navbarItem.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.navbar-item a').forEach(link => {
+      link.addEventListener('click', () => {
+        navbarItem.classList.remove('active');
+      });
+    });
+  </script>
 
   <section class="hero">
     <div class="hero-image">
@@ -342,4 +362,5 @@
   </footer>
   <script src="D:\MyPortfolio\project\script.js"></script>
 </body>
+
 </html>
